@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Brain Food</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-brain-artificial-intelligence-kiranshastry-lineal-color-kiranshastry-2.png"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-brain-artificial-intelligence-kiranshastry-lineal-color-kiranshastry-2.png"/>
+        <h1 class="title is-3 has-text-grey has-text-weight-light">Brain Food</h1>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    <h2>
+                        Search by Keyword
+                    </h2>
+                    <div class="search-container">
+                        <div class="field" id="search-form">
+                            <form>
+                                <div class="control is-expanded">
+                                    <input type="text" name="search" id="search" autofocus="true" class="input is-rounded" />
+                                </div>
+                                <button type="submit" class="button is-rounded">Search</button>
+                            </form>
+                        </div>
+                        <a href="#recentSearches" class="button is-rounded">Recent Searches</a>
+                    </div>
+                    <br>
+                    <h2>
+                        Search by Category
+                    </h2>
+                    <div class="category-container">
+                        <div id="categories" class="categories">
+                            <button id="self-development" class="button is-rounded is-fullwidth">Self Development</button>
+                            <button id="business" class="button is-rounded is-fullwidth">Business</button>
+                            <button id="education" class="button is-rounded is-fullwidth">Education</button>
+                            <button id="science" class="button is-rounded is-fullwidth">Science</button>
+                            <button id="family" class="button is-rounded is-fullwidth">Family</button>
+                            <button id="government" class="button is-rounded is-fullwidth">Government</button>
+                            <button id="comedy" class="button is-rounded is-fullwidth">Comedy</button>
+                            <button id="crime" class="button is-rounded is-fullwidth">True Crime</button>
+                            <button id="videoGames" class="button is-rounded is-fullwidth">Video Games</button>
+                            <button id="history" class="button is-rounded is-fullwidth">History</button>
+                            <button id="tech" class="button is-rounded is-fullwidth">Technology</button>
+                            <button id="leisure" class="button is-rounded is-fullwidth">Leisure</button>
+                            <button id="culture" class="button is-rounded is-fullwidth">Society & Culture</button>
+                            <button id="sports" class="button is-rounded is-fullwidth">Sports</button>
+                            <button id="romance" class="button is-rounded is-fullwidth">Romance</button>
+                            <button id="tv" class="button is-rounded is-fullwidth">TV & Film</button>
+                            <button id="music" class="button is-rounded is-fullwidth">Music</button>
+                            <button id="fiction" class="button is-rounded is-fullwidth">Fiction</button>
+                            <button id="entertainment" class="button is-rounded is-fullwidth">Art & Entertainment</button>
+                            <button id="health" class="button is-rounded is-fullwidth">Health & Wellness</button>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <h2>Recent Searches</h2>
+                        <br>
+                        <div id="recentSearches" class="recent">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-two-fifths">
+                    <div>
+                        <h2>Podcasts</h2>
+                        <div id="podcasts" class="list-group"></div>
+                    </div>               
+                </div>
+                <div class="column is-two-fifths">
+                    <div>
+                        <h2>Books</h2>
+                        <div id="book-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal" id= "modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box" id= "modal-text">
+            </div>
+          </div>
+        
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
